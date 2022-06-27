@@ -1,0 +1,405 @@
+/* Resets */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    background-color: #C1B7EF;
+
+}
+
+
+header {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: 100;
+    background-color: #7D79FA;
+    
+    display: flex;
+    top: 0;
+    position: sticky;
+    justify-content: center;
+  
+}
+
+.navegacion{
+    display: flex;
+    align-items: center; 
+    width: 90vw;
+    justify-content: space-between;
+
+}
+
+.navegacion ul{
+    display: flex;
+    width: 50%;
+    justify-content: end;
+    
+
+}
+
+.navegacion ul  li{
+    display: flex;
+    width: auto;
+    height: 5rem;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.portada {
+    height: 85vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../imgs/fotoportada.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #F3ECFF;
+    padding: 1rem;
+
+}
+
+.titulo{
+    font-family: 'Noto Serif', serif;
+    color: #F3ECFF;
+    font-size: 4rem;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+.subtitulo{
+    font-family: 'Noto Serif', serif;
+    color: #F3ECFF;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px black;
+    padding: 10px;
+
+}
+
+
+
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ede4fcb0;
+    color:black;
+
+}
+
+.contenedor1  {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 1rem;
+    width: 100VW;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    min-width: 350px;
+    min-height: 500px;
+    width: 25vw;
+    margin: 20px 0px;
+    background-color: white;
+    color: black;
+    box-shadow: 3px 3px rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+.card   img{
+    width: 60%;
+    height: 60% ;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card p{
+    text-align: justify;
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+.card h3{
+    font-size: 2rem;
+    text-align: center;
+    padding: 5px;
+}
+h3{
+    font-size: 2rem;
+    color: black;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    background-color: #6BBAA3;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    padding: 5px;    
+    box-shadow: 3px 3px rgba(0,0,0,0.5);
+    border-radius: 10px
+}
+
+a{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: 100;
+    color: black;
+}
+
+input,select{
+    font-size: 1.5rem;
+    color: black;
+    width: 300px;
+}
+
+label{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.contacto   {
+    color:black;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    display:flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.contacto_titulo {
+    width: 60vw;
+}
+
+.contacto_div {
+    height: 32px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.contacto_div_area{
+    height: 50px;
+
+}
+
+.botones{
+    height: 40px;
+    margin: 20px;
+}
+
+.button {
+    width: auto;
+    color: white;
+    background-color: #6BBAA3;
+    font-size: 1rem;
+    justify-content: space-around;
+    height: 40px;
+    width: 150px;
+
+}
+
+.malla  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80vw;
+    grid-gap: 15px;
+
+
+}
+
+
+.malla_div1 {
+    justify-items: end;
+    width: 40vw;
+
+}
+
+.malla_div2 {
+    justify-items: start;
+    width: 40vw;
+
+}
+
+
+textarea{
+        resize: none;
+        height: 50px;
+        width: 300px;
+
+}
+
+@media screen and (max-width:1080px){
+ 
+    .contenedor1 {
+            grid-template-columns: repeat(2,1fr);
+            gap: 5px;
+            margin-top: 1rem;
+            width: 100VW;
+            align-items: center;
+            justify-content: space-evenly;
+            justify-items: center;
+           
+    }       
+
+}
+
+@media screen and ( max-width:890px) {
+    .contacto_div {
+        font-size:1rem;
+        height: 56px;
+    
+    }
+}
+
+    
+@media screen and (max-width:715px) {
+    
+    .contenedor1 {
+        grid-template-columns:1fr;
+        margin-top: 1rem;
+        width: 100VW;
+        align-items: center;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+    
+    
+    .card img {
+        width: 70%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .card h3 {
+        max-width: 75vw;
+        font-size: 1.5rem;
+        display:inline-flex;
+        text-align: center;
+        
+    }
+
+    .card p {
+        font-size: 1rem;
+        padding-bottom: 15px;
+
+    }
+
+}
+
+@media screen and (max-width:625px) {
+    input,select,label{
+        width: 200px;
+        font-size: 1rem;
+    }
+    
+    textarea{
+        width:200px;
+    }
+
+    .contacto_titulo{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width:430px) {
+    .navegacion ul{
+        display:none;
+        
+    }
+
+    .titulo {
+        font-size: 2rem;
+    
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+
+    .card{
+        width: 80vw;
+        min-width: 200px;
+        min-height: 400px;
+        display:grid;
+        justify-items: center;
+        align-items: center;
+        
+    }
+    .card img {
+        width: 70%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .card h3 {
+        max-width: 75vw;
+        font-size: 1.5rem;
+        text-align: center;
+        
+    }
+
+    .card p {
+        font-size: 1rem;
+        padding-bottom: 15px;
+    }
+
+    footer {
+        display:grid;
+        grid-template-rows: repeat(2,fr)
+
+    }
+
+
+    footer div {
+        margin: 5px;   
+        text-align: center;
+    }
+
+    .contacto h3 {
+        font-size: 1rem;
+    }
+
+    input,select,label{
+        width: 140px;
+
+    }
+    textarea{
+        width:140px;
+    } 
+
+    .button {
+        font-size: 1rem;
+        height: auto;
+        width: 100px;
+    }
+
+}
+
