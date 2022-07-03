@@ -21,14 +21,17 @@ body{
 header {
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-weight: 100;
-    background-color: #7D79FA;
-    
+    background-image:linear-gradient(to bottom,#7D79FA,#ccc);
     display: flex;
     top: 0;
     position: sticky;
     justify-content: center;
+    height: 110px;
+    padding-top: 10px;
+    z-index: 2;
   
 }
+
 
 .navegacion{
     display: flex;
@@ -43,16 +46,19 @@ header {
     width: 50%;
     justify-content: end;
     
-
 }
 
-.navegacion ul  li{
+.navegacion ul  li,img{
     display: flex;
     width: auto;
     height: 5rem;
     align-items: center;
     padding: 5px;
+}
 
+.navegacion ul li:hover{
+    transform: translate(-5px,5px);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .portada {
@@ -122,9 +128,21 @@ header {
     margin: 20px 0px;
     background-color: white;
     color: black;
-    box-shadow: 3px 3px rgba(0,0,0,0.5);
+    box-shadow: -5px 5px rgba(0,0,0,0.5);
     border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    
 }
+
+.card:hover{
+    transition: all 0.5s ease-out;
+    box-shadow: -10px 10px rgba(0,0,0,0.5);
+    border: 1px solid black;
+    background-color: #7D79FA;
+    transform: translate(10px,-10px);
+
+ }
 
 .card   img{
     width: 60%;
@@ -154,16 +172,27 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     color: white;
-    background-color: #6BBAA3;
+    background-image: linear-gradient(to top, #6BBAA3, #ccc);
     font-family: 'Kdam Thmor Pro', sans-serif;
+    height: 120px;
 }
 
-.logo img {
-    width: 100px;
-    height: 100px;
-    padding: 5px;    
+footer div:hover {
+    transform: translate(-5px,5px);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.logo  {
+    width: 90px;
+    height: 90px;    
     box-shadow: 3px 3px rgba(0,0,0,0.5);
-    border-radius: 10px
+    border-radius: 10px;
+    transition: 0.3ms;
+}
+
+.logo:hover {
+    transform: translate(-5px,5px);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 a{
@@ -267,6 +296,15 @@ textarea{
             justify-items: center;
            
     }       
+
+    .card:hover{
+        transition: all 0.5s ease-out;
+        box-shadow: -10px 10px rgba(0,0,0,0.5);
+        border: 1px solid black;
+        background-color: #7D79FA;
+        transform: translate(10px,-10px);
+    
+     }
 
 }
 
