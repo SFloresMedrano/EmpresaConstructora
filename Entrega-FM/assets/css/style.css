@@ -83,57 +83,46 @@ header {
 
 }
 
-.subtitulo{
+
+.subtitulo {
     font-family: 'Noto Serif', serif;
     color: #F3ECFF;
     font-size: 2rem;
     text-shadow: 1px 1px 2px black;
     padding: 10px;
+    text-align: center;
 
 }
 
 
 
 
-.contenedor {
-    display: flex;
-    align-items: center;
+.container-fluid {
     justify-content: center;
-    flex-direction: column;
     background-color: #ede4fcb0;
     color:black;
 
 }
 
 .contenedor1  {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
     margin-top: 1rem;
-    width: 100VW;
     align-items: center;
     justify-content: space-evenly;
     justify-items: center;
-
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: auto;
-    min-width: 350px;
-    min-height: 500px;
-    width: 25vw;
     margin: 20px 0px;
     background-color: white;
     color: black;
     box-shadow: -5px 5px rgba(0,0,0,0.5);
     border-radius: 20px;
     position: relative;
-    z-index: 1;
-    
+
 }
+
 
 .card:hover{
     transition: all 0.5s ease-out;
@@ -145,10 +134,12 @@ header {
  }
 
 .card   img{
-    width: 60%;
-    height: 60% ;
+    width: 70%;
+    height: 30vh;
     object-fit: cover;
     border-radius: 20px;
+    margin-top: 15px;
+
 }
 
 .card p{
@@ -287,8 +278,7 @@ textarea{
 @media screen and (max-width:1080px){
  
     .contenedor1 {
-            grid-template-columns: repeat(2,1fr);
-            gap: 5px;
+
             margin-top: 1rem;
             width: 100VW;
             align-items: center;
@@ -320,7 +310,6 @@ textarea{
 @media screen and (max-width:715px) {
     
     .contenedor1 {
-        grid-template-columns:1fr;
         margin-top: 1rem;
         width: 100VW;
         align-items: center;
@@ -382,15 +371,6 @@ textarea{
         font-size: 1rem;
     }
 
-    .card{
-        width: 80vw;
-        min-width: 200px;
-        min-height: 400px;
-        display:grid;
-        justify-items: center;
-        align-items: center;
-        
-    }
     .card img {
         width: 70%;
         height: auto;
@@ -411,7 +391,8 @@ textarea{
 
     footer {
         display:grid;
-        grid-template-rows: repeat(2,fr)
+        grid-template-rows: repeat(2,fr);
+        height: auto;
 
     }
 
