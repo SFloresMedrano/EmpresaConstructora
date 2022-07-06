@@ -25,7 +25,8 @@ header {
     display: flex;
     top: 0;
     position: sticky;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     height: 110px;
     padding-top: 10px;
     z-index: 2;
@@ -33,46 +34,15 @@ header {
 }
 
 
-.navegacion{
-    display: flex;
-    align-items: center; 
-    width: 90vw;
-    justify-content: space-between;
-
-}
-
-.navegacion ul{
-    display: flex;
-    width: 50%;
-    justify-content: end;
-    
-}
-
 .navegacion ul  li,img{
-    display: flex;
+    display: block;
     width: auto;
-    height: 5rem;
-    align-items: center;
     padding: 5px;
 }
 
 .navegacion ul li:hover{
     transform: translate(-5px,5px);
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-}
-
-.portada {
-    height: 85vh;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url(../imgs/fotoportada.jpg);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: #F3ECFF;
-    padding: 1rem;
-
 }
 
 .titulo{
@@ -97,10 +67,12 @@ header {
 
 
 
-.container-fluid {
+.contenedor{
     justify-content: center;
     background-color: #ede4fcb0;
     color:black;
+    display:flex;
+
 
 }
 
@@ -119,7 +91,7 @@ header {
     color: black;
     box-shadow: -5px 5px rgba(0,0,0,0.5);
     border-radius: 20px;
-    position: relative;
+    height: 100%;
 
 }
 
@@ -135,7 +107,7 @@ header {
 
 .card   img{
     width: 70%;
-    height: 30vh;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px;
     margin-top: 15px;
@@ -166,6 +138,7 @@ footer {
     background-image: linear-gradient(to top, #6BBAA3, #ccc);
     font-family: 'Kdam Thmor Pro', sans-serif;
     height: 120px;
+    margin-top: 50px;
 }
 
 footer div:hover {
@@ -179,6 +152,8 @@ footer div:hover {
     box-shadow: 3px 3px rgba(0,0,0,0.5);
     border-radius: 10px;
     transition: 0.3ms;
+
+    display: flex;
 }
 
 .logo:hover {
@@ -280,7 +255,6 @@ textarea{
     .contenedor1 {
 
             margin-top: 1rem;
-            width: 100VW;
             align-items: center;
             justify-content: space-evenly;
             justify-items: center;
@@ -311,7 +285,6 @@ textarea{
     
     .contenedor1 {
         margin-top: 1rem;
-        width: 100VW;
         align-items: center;
         justify-content: space-evenly;
         justify-items: center;
@@ -357,10 +330,7 @@ textarea{
 
 
 @media screen and (max-width:430px) {
-    .navegacion ul{
-        display:none;
-        
-    }
+
 
     .titulo {
         font-size: 2rem;

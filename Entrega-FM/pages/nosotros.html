@@ -6,68 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Mi Empresa Constructora</title>
     <link rel="shortcut icon" href="../assets/imgs/logomiempresa.ico.ico" type="image/x-icon/">
-    <link rel="stylesheet" href="../assets/Css/style.css"/>
+   
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Work+Sans:wght@300&display=swap" rel="stylesheet"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Noto+Serif&family=Open+Sans:wght@300&family=Work+Sans:wght@300&display=swap" rel="stylesheet"/>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../assets/css/style.css"/>
+
+</head>
 <body>
     <!-- Header -->
     <header>
-        <div>
-            <nav class="navegacion" class="logo">
-                <a href="../index.html" class="logo">
-                    <img src="../assets/imgs/logomiempresa.png" alt="logomiempresa"  width="100" heigth="100" />
-                </a>             
-               
-                <ul>
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="../pages/Nosotros.html">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="../pages/Nuestras-obras.html">Nuestras Obras</a>
-                    </li>
-                    <li>
-                        <a href="../pages/Contacto.html">Contacto</a>
-                    </li>
-                </ul>
 
-            </nav>
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <a class="navbar-brand logo" href="../index.html"><img src="../assets/imgs/logomiempresa.png" alt="logomiempresa" /></a>
+            </div>
+            <div>
+                <nav class="navbar navbar-expand-md">
+                    <div class="container">
+        
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ">
+                          <li class="nav-item">
+                            <a class="nav-link active fs-5" aria-current="page" href="../index.html">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active fs-5" href="../pages/nosotros.html">Nosotros</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active fs-5" href="../pages/nuestras-obras.html">Nuestras Obras</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active fs-5" href="../pages/contacto.html">Contacto</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
         </div>
+           
     </header>
     <!-- Main -->
     <main>
-        <section class="contenedor">
-            <h1 class="titulo">Nuestras divisiones</h1>
+    
+        <section class="container-fluid">
 
-            <div class="contenedor1">
-                
-                
-                    <div class="card">
-                        <img src="../assets/imgs/division-vivienda.jpg" alt="Division Vivienda"/>
+                <h2 class="subtitulo container-fluid">Nuestras divisiones</h2>
+                <div class="container-fluid">
+                    <div class="row g-6">
+                        <div class="contenedor1 col-xs-12 col-sm-6 col-lg-4">
+
+                                <div class="card">
+                                    <img src="../assets/imgs/division-vivienda.jpg" alt="Division Vivienda"/>
 
 
-                        <h3>Division Vivienda</h3>
-                        <p>Esta división está capacitada para brindarle las mejores opciones para su vivienda</p>
+                                    <h3>Division Vivienda</h3>
+                                    <p>Esta división está capacitada para brindarle las mejores opciones para su vivienda</p>
+                                </div>
+
+                            
+                        </div>
+                        <div class="contenedor1 col-xs-12 col-sm-6 col-lg-4"> 
+                            <div class="card">
+                                <img src="../assets/imgs/division-vial.jpg" alt="Division Vial"/>
+
+                                <h3>Division Vial</h3>
+                                <p>Esta división se encarga de construir y mejorar caminos ya existentes. Trabajamos codo a codo con la Dirección Nacional de Vialidad.</p>
+                            </div>
+                        </div>
+                        <div class=" contenedor1 col-xs-12 col-sm-6 col-lg-4">
+                            <div class="card">
+                                <img src="../assets/imgs/grandes-obras.jpg" alt="Division Grandes Obras"/>
+
+                                <h3>Division Grandes Obras</h3>
+                                <p>Esta división se encarga de concretar grandes obras, desde la excavación, hasta la entrega de llave en mano. </p>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="card">
-                        <img src="../assets/imgs/division-vial.jpg" alt="Division Vial"/>
 
-                        <h3>Division Vial</h3>
-                        <p>Esta división se encarga de construir y mejorar caminos ya existentes. Trabajamos codo a codo con la Dirección Nacional de Vialidad.</p>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/imgs/grandes-obras.jpg" alt="Division Grandes Obras"/>
+                </div>
 
-                        <h3>Division Grandes Obras</h3>
-                        <p>Esta división se encarga de concretar grandes obras, desde la excavación, hasta la entrega de llave en mano. </p>
-                    </div>
-            </div>
             
         </section>
 
