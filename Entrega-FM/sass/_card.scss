@@ -1,0 +1,40 @@
+.card {
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+    background-color: white;
+    color: black;
+    box-shadow: -5px 5px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    height: 100%;
+    transition: all 1s ease;
+
+    &_img {
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-top: 15px;
+    }
+    &_h3{
+        font-size: 2rem;
+        text-align: center;
+        padding: 5px;
+        color: black;
+    }
+    &_p{
+        text-align: justify;
+        width: 80%;
+        font-size: 1.5rem; 
+    }
+
+
+    &:hover{
+        transition: all 0.5s ease-out;
+        box-shadow: -10px 10px $sombra;
+        border: 1px solid black;
+        background-color: $cHeader;
+        transform: translate(10px,-10px);
+    }
+}
+

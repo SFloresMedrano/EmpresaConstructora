@@ -58,6 +58,10 @@
     <!-- Main -->
     <main>
         <section class="portada">
+          <div class="d-flex justify-content-center">
+            <h1 class="titulo">Mi Empresa Constructora</h1>
+          </div>
+
 
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                 <div class="carousel-indicators">
@@ -69,12 +73,14 @@
                   <div class="carousel-item active">
                     <img src="../assets/imgs/fotoportada.jpg" class="d-block w-100" alt="fotoportada_personal">
                     <div class="carousel-caption d-none d-md-block">
+                      <h1 class="titulo"> Mi Empresa Constructora</h1>
                       <h2>Nos dedicamos a todo tipo de Construcciones civiles</h2>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="../assets/imgs/fotoportada2.jpg" class="d-block w-100" alt=".maquinaria">
                     <div class="carousel-caption d-none d-md-block">
+                      <h1 class="titulo"> Mi Empresa Constructora</h1>
                       <h2>Contamos con maquinaria para todo tipo de obras</h2>
 
                     </div>
@@ -82,6 +88,7 @@
                   <div class="carousel-item">
                     <img src="../assets/imgs/fotoportada3.jpg" class="d-block w-100" alt="fotohormigonada">
                     <div class="carousel-caption d-none d-md-block">
+                      <h1 class="titulo"> Mi Empresa Constructora</h1>
                       <h2>Estamos capacitandonos constantemente para dar lo mejor de nosotros</h2>
                     </div>
                   </div>
@@ -98,112 +105,81 @@
 
     </section>
 
-        </section>
-        
-            <!-- Formulario de contacto -->
-        <div class="contacto">
-            <h3 class="contacto_titulo">Dejenos su consulta, nuestro sector comercial se comunicara a la brevedad</h3>
-            <div class="malla">
-                
-                <div class="malla_div1">
-                    <form action="" method="get"></form>
-                        <div class="contacto_div">
-                            <label for="nombre">Ingrese su nombre y apellido</label>
-                        </div>
+        <section class="container mt-3 w-80 justify-content-center">
 
-                        <div class="contacto_div">
-                            <label for="numero">Ingrese su telefono</label>
-                        </div>
+          <div class="text-center">
+            <h3 class="subtitulo">Dejenos su consulta, nuestro sector comercial se comunicará a la brevedad</h3>
+          </div>
+          
 
-                        <div class="contacto_div">
-                            <label for="correo">Ingrese su correo</label>
-                        </div>
 
-                        <div class="contacto_div"> 
-                            <label for="division" >Ingrese la division de consulta</label>
-                        </div>
+        <form action="">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido">
+            <label for="nombre">Nombre y Apellido</label>
+          </div>
 
-                        <div class="contacto_div">
-                            <label for="Suscripcion-Newsletter"> Desea suscribirse a nuestro Newsletter?</label>
-                        </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="telefono" placeholder="Telefono">
+            <label for="telefono">Telefono</label>
+          </div>
 
-                        <div class="contacto_div_area">
-                            <label for="Consulta">Dejenos su consulta</label>
-                        </div>
-                    
-                    
-                    </form>
-                    
-                </div>
+          <div class="form-floating mb-3">            
+            <input type="email" class="form-control" id="correo" placeholder="nombre@servidor.com">
+            <label for="correo">Su correo</label>
+          </div>
 
-                <div class="malla_div2">
-                    <form action="" method="get"></form>
-                    <div class="contacto_div">   
-                        <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required class="form-control">
-                    
-                    </div>
+          <div class="form-floating mb-3">
+            <select class="form-select" id="division" aria-label="Floating label">
+              <option selected>Seleccione la división</option>
+              <option value="1">División Vivienda</option>
+              <option value="2">División Vial</option>
+              <option value="3">División Grandes Obras</option>
+            </select>
+            <label for="division">Consulte a su division</label>
+          </div>
 
-                    <div class="contacto_div">
-                        <input type="text" name="numero" id="numero" placeholder="+ 54 X XX XXXX XXXX" required class="form-control">
-                    </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox">
+            <label class="form-check-label" for="checkbox">
+              ¿Desea recibir nuestro boletín?
+            </label>
+          </div>
+          <div class="form-floating d-flex align-items-center">
+            <textarea class="form-control" placeholder="Dejenos su consulta" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea textarea" >Dejenos su consulta</label>
+          </div>
 
-                    <div class="contacto_div">
-                        <input type="email" name="correo" id="correo" placeholder="XXX@XXX.com" required class="form-control">
-                    </div>
+        </form>
 
-                    <div class="contacto_div"> 
-                        
-                        <select name="division" id="division" class="form-control">
-                        <option value="Vivienda">Vivienda</option>
-                        <option value="Vial">Vial</option>
-                        <option value="Grandes Obras">Grandes Obras</option>
-                        </select>
-                    </div>
-
-                    <div class="contacto_div">
-                            <input type="checkbox"  id="Suscripcion-Newsletter">
-                    </div>
-
-                    <div class="contacto_div_area"> 
-                        <textarea name="consulta" id="consulta" required class="form-control"></textarea>
-                    </div>                       
-                
-                    </form> 
-
-                </div>
-
-                                  
-            </div>
-            <div class="botones">
-                <button type="submit" class="button"> Enviar Consulta</button>
-                <button type="reset" class="button">Borrar Campos</button>
-
-            </div> 
-            
+        <div class="mt-3 d-flex justify-content-around">
+          <input class="btn button" type="submit" value="Enviar">
+          <input class="btn button" type="reset" value="Limpiar campos">
         </div>
+        </section>
 
 
     </main>
 
     <!-- footer -->
-    <footer>
-        <div>
-            <a href="../index.html" class="logo">
-                <img src="../assets/imgs/logomiempresa.png" alt="Mi Empresa Constructora Logo"> 
-            </a>
-        </div>
-        <div>
-            <a href="../index.html">Inicio</a>
-        </div>
-        <div>
-            <a href="../pages/Nosotros.html">Nosotros</a>
-        </div>
-        <div>
-            <a href="../pages/nuestras-obras.html">Nuestras Obras</a>
-        </div>
-        <div>
-            <a href="../pages/contacto.html">Contacto</a>
-        </div>
-    </footer>
+    <footer class="footer"> 
+      <div>
+          <a href="./index.html" class="logo">
+              <img src="../assets/imgs/logomiempresa.png" alt="Mi Empresa Constructora Logo"> 
+          </a>
+      </div>
+      <div class="footer_div">
+          <a href="../index.html">Inicio</a>
+      </div>
+      <div class="footer_div">
+          <a href="../pages/Nosotros.html">Nosotros</a>
+      </div>
+      <div class="footer_div">
+          <a href="../pages/nuestras-obras.html">Nuestras Obras</a>
+      </div>
+      <div class="footer_div">
+          <a href="../pages/contacto.html">Contacto</a>
+      </div>
+  </footer>
 </body>
 </html>

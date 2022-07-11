@@ -1,4 +1,7 @@
-@import url(./_variables.scss);
-
-@import url(./_global.scss);
-
+@import 'variables';
+@import 'global';
+@import 'header';
+@import 'footer';
+@import 'card';
+@import 'contacto';
+@import 'mediaq';

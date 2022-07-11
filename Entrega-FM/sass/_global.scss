@@ -1,3 +1,81 @@
-body {
-    background-color: black;
+/* Resets */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    background-color: $colorBody;
+    position: relative;
+
+}
+
+.titulo{
+    
+    font-family: 'Noto Serif', serif;
+    color: $cTitulos;
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px black;
+    
+}
+
+.subtitulo {
+    font-family: 'Noto Serif', serif;
+    color: $cTitulos;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px black;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+.contenedor{
+    justify-content: center;
+    background-color: $cContenedor;
+    color:black;
+    display:flex;
+
+}
+
+.contenedor1  {
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: 100;
+    color: black;
+
+
+    &:hover {
+        transform: translate(-5px,5px);
+        text-shadow: 1px 1px 2px $sombra;
+        transition: 0.5s;
+    }
+}
+
+label{
+    font-size: 1.5rem;
+    color: black;
+}
+
+input,select{
+    font-size: 1.5rem;
+    color: black;
+    width: 300px;
+}
+
+p{
+    font-size: 1.5rem;
+    color: black;
 }

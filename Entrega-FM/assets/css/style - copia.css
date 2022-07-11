@@ -73,7 +73,6 @@ header {
     color:black;
     display:flex;
 
-
 }
 
 .contenedor1  {
@@ -124,9 +123,6 @@ header {
     font-size: 2rem;
     text-align: center;
     padding: 5px;
-}
-h3{
-    font-size: 2rem;
     color: black;
 }
 
@@ -161,11 +157,6 @@ footer div:hover {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
-a{
-    font-family: 'Kdam Thmor Pro', sans-serif;
-    font-weight: 100;
-    color: black;
-}
 
 input,select{
     font-size: 1.5rem;
@@ -173,10 +164,7 @@ input,select{
     width: 300px;
 }
 
-label{
-    font-size: 1.5rem;
-    color: black;
-}
+
 
 .contacto   {
     color:black;
@@ -193,10 +181,7 @@ label{
 }
 
 .contacto_div {
-    height: 32px;
     padding-bottom: 5px;
-    display: flex;
-    align-items: center;
 }
 
 .contacto_div_area{

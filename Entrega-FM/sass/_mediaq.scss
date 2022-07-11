@@ -1,0 +1,90 @@
+
+@media screen and ( max-width:835px) {
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    .titulo{
+        font-size: 2.5rem;
+    }
+
+    .subtitulo{
+        font-size: 2rem;
+    }
+}
+
+
+    
+@media screen and (max-width:715px) {
+    
+    .card {
+        &_img {
+            width: 70%;
+            height: auto;
+            padding: 15px;
+        }
+        &_h3 {
+            max-width: 75vw;
+            font-size: 1.5rem;
+            display:inline-flex;
+            text-align: center;
+        }
+        &_p {
+            font-size: 1.25rem;
+            padding-bottom: 15px;
+        }
+    }
+
+}
+
+@media screen and (max-width:625px) {
+    input,select,label{
+        font-size: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width:430px) {
+
+
+    .titulo {
+        font-size: 2rem;
+    
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+
+    .card {
+        &_img{
+            width: 70%;
+            height: auto;
+            padding: 15px;
+        }
+
+        &_h3{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        &_p{
+            font-size: 1rem;
+            padding-bottom: 15px;
+        }
+    }
+
+    .footer {
+        display:flex;
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        margin-top:50px;
+        &_div{
+            margin-top:10px;
+        }
+
+    }
+
+
+}
