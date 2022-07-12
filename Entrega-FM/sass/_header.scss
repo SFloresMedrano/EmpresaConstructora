@@ -6,7 +6,6 @@ header {
     position: sticky;
     align-items: center;
     justify-content: space-between;
-    height: 120px;
     padding-top: 10px;
     z-index: 2;
     background-image:linear-gradient(to bottom,$cHeader,#ccc);
@@ -24,4 +23,9 @@ header {
         text-shadow: 1px 1px 2px $sombra;
 
     }
+}
+
+.navbar>.container{
+    justify-content: end;
+    text-align: right;        
 }
