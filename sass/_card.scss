@@ -1,10 +1,13 @@
+
+
+
 .card {
     align-items: center;
     justify-content: space-evenly;
     margin: 20px 0px;
     background-color: white;
     color: black;
-    box-shadow: -5px 5px rgba(0,0,0,0.5);
+    box-shadow: -5px 5px $sombra;
     border-radius: 20px;
     height: 100%;
     transition: all 1s ease;
@@ -13,14 +16,13 @@
         width: 70%;
         height: 100%;
         object-fit: cover;
-        border-radius: 20px;
         margin-top: 15px;
+        border-radius: inherit;
     }
     &_h3{
         font-size: 2rem;
         text-align: center;
         padding: 5px;
-        color: black;
     }
     &_p{
         text-align: justify;
@@ -29,11 +31,13 @@
     }
 
     &:hover{
-        transition: all 0.5s ease-out;
         box-shadow: -10px 10px $sombra;
         border: 1px solid black;
         background-color: $cHeader;
-        transform: translate(10px,-10px);
+        @include popup(10px,-10px,1s)
     }
 }
+
+
+
 

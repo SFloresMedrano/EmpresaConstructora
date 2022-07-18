@@ -12,19 +12,17 @@ body {
   background-color: #C1B7EF;
   position: relative; }
 
-.titulo {
+.titulo, .subtitulo {
   font-family: 'Noto Serif', serif;
   color: #F3ECFF;
   font-size: 3rem;
   text-shadow: 1px 1px 2px black; }
 
 .subtitulo {
-  font-family: 'Noto Serif', serif;
-  color: #F3ECFF;
   font-size: 2.5rem;
-  text-shadow: 1px 1px 2px black;
   padding: 10px;
-  text-align: center; }
+  text-align: center;
+  margin-top: 20px; }
 
 .contenedor {
   justify-content: center;
@@ -46,20 +44,15 @@ a {
   a:hover {
     transform: translate(-5px, 5px);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    transition: 0.5s; }
+    transform: translate(-5, 5);
+    transition: all 1s ease-in-out; }
 
-label {
+label, input, select {
   font-size: 1.5rem;
   color: black; }
 
 input, select {
-  font-size: 1.5rem;
-  color: black;
   width: 300px; }
-
-p {
-  font-size: 1.5rem;
-  color: black; }
 
 header {
   font-family: 'Kdam Thmor Pro', sans-serif;
@@ -70,7 +63,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding-top: 10px;
-  z-index: 2;
+  z-index: 3;
   background-image: linear-gradient(to bottom, #7D79FA, #ccc); }
 
 .logo {
@@ -79,19 +72,17 @@ header {
   box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   transition: all 1s ease;
-  display: flex; }
+  display: flex;
+  margin: 10px; }
   .logo:hover {
     transform: translate(-5px, 5px);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
+    transition: all 1s ease-in-out; }
 
 .navbar > .container {
   justify-content: end;
   text-align: right; }
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   color: white;
   background-image: linear-gradient(to top, #6BBAA3, #ccc);
   font-family: 'Kdam Thmor Pro', sans-serif;
@@ -100,7 +91,18 @@ header {
   .footer_div:hover {
     transform: translate(-5px, 5px);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    transition: 0.5s; }
+    transition: 0.5s;
+    transform: translate(-5, 5);
+    transition: all 1s ease-in-out; }
+
+.icon-twitter:hover {
+  color: #55acee; }
+
+.icon-facebook:hover {
+  color: #1877F2; }
+
+.icon-instagram:hover {
+  color: #dd2a7b; }
 
 .card {
   align-items: center;
@@ -116,23 +118,22 @@ header {
     width: 70%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
-    margin-top: 15px; }
+    margin-top: 15px;
+    border-radius: inherit; }
   .card_h3 {
     font-size: 2rem;
     text-align: center;
-    padding: 5px;
-    color: black; }
+    padding: 5px; }
   .card_p {
     text-align: justify;
     width: 80%;
     font-size: 1.5rem; }
   .card:hover {
-    transition: all 0.5s ease-out;
     box-shadow: -10px 10px rgba(0, 0, 0, 0.5);
     border: 1px solid black;
     background-color: #7D79FA;
-    transform: translate(10px, -10px); }
+    transform: translate(10px, -10px);
+    transition: all 1s ease-in-out; }
 
 .button {
   background-color: #6BBAA3;
@@ -146,10 +147,22 @@ header {
 @media screen and (max-width: 835px) {
   h2 {
     font-size: 1.5rem; }
-  .titulo {
+  .titulo, .subtitulo {
     font-size: 2.5rem; }
   .subtitulo {
     font-size: 2rem; } }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: auto;
+    padding: 10px;
+    margin-top: 50px;
+    padding-bottom: 30px; }
+    .footer_div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px; } }
 
 @media screen and (max-width: 715px) {
   .card_img {
@@ -166,11 +179,11 @@ header {
     padding-bottom: 15px; } }
 
 @media screen and (max-width: 625px) {
-  input, select, label {
+  input, select, label, input, select {
     font-size: 1rem; } }
 
 @media screen and (max-width: 430px) {
-  .titulo {
+  .titulo, .subtitulo {
     font-size: 2rem; }
   .subtitulo {
     font-size: 1rem; }
@@ -183,12 +196,4 @@ header {
     text-align: center; }
   .card_p {
     font-size: 1rem;
-    padding-bottom: 15px; }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
-    margin-top: 50px; }
-    .footer_div {
-      margin-top: 10px; } }
+    padding-bottom: 15px; } }

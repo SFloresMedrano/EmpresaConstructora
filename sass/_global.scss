@@ -25,14 +25,12 @@ body{
 }
 
 .subtitulo {
-    font-family: 'Noto Serif', serif;
-    color: $cTitulos;
-    font-size: 2.5rem;
-    text-shadow: 1px 1px 2px black;
-    padding: 10px;
-    text-align: center;
-
-}
+    @extend .titulo;
+        font-size: 2.5rem;
+        padding: 10px;
+        text-align: center;
+        margin-top: 20px;
+    }
 
 
 .contenedor{
@@ -50,17 +48,21 @@ body{
     justify-items: center;
 }
 
+@mixin popup ($x,$y,$tiempo){
+    transform: translate($x,$y);
+    transition: all $tiempo ease-in-out;
+}
+
+
 a{
     text-decoration: none;
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-weight: 100;
     color: black;
-
-
     &:hover {
         transform: translate(-5px,5px);
         text-shadow: 1px 1px 2px $sombra;
-        transition: 0.5s;
+        @include popup(-5,5 ,1s )
     }
 }
 
@@ -70,11 +72,7 @@ label{
 }
 
 input,select{
-    font-size: 1.5rem;
-    color: black;
+    @extend label;
     width: 300px;
 }
-p{
-    font-size: 1.5rem;
-    color: black;
-}
+

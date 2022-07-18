@@ -12,7 +12,22 @@
     }
 }
 
+@media screen and (max-width:768px){
+    .footer {
+        height: auto;
+        padding: 10px;
+        margin-top:50px;
+        padding-bottom:30px;
+        &_div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top:10px;
+        }
 
+    }
+
+}
     
 @media screen and (max-width:715px) {
     
@@ -73,17 +88,6 @@
         }
     }
 
-    .footer {
-        display:flex;
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-        margin-top:50px;
-        &_div{
-            margin-top:10px;
-        }
-
-    }
 
 
 }
