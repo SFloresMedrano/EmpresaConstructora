@@ -21,6 +21,7 @@ body{
     color: $cTitulos;
     font-size: 3rem;
     text-shadow: 1px 1px 2px black;
+    text-align: center
     
 }
 
@@ -76,6 +77,12 @@ input,select{
 }
 
 .carousel-item {
-    height: 80vh;
+    height: 70vh;
 }
 
+.carousel-item img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+ }

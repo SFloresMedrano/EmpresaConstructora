@@ -16,7 +16,8 @@ body {
   font-family: 'Noto Serif', serif;
   color: #F3ECFF;
   font-size: 3rem;
-  text-shadow: 1px 1px 2px black; }
+  text-shadow: 1px 1px 2px black;
+  text-align: center; }
 
 .subtitulo {
   font-size: 2.5rem;
@@ -54,7 +55,13 @@ input, select {
   width: 300px; }
 
 .carousel-item {
-  height: 80vh; }
+  height: 70vh; }
+
+.carousel-item img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
 
 header {
   font-family: 'Kdam Thmor Pro', sans-serif;
