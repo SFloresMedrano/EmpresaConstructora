@@ -60,9 +60,8 @@ a{
     font-weight: 100;
     color: black;
     &:hover {
-        transform: translate(-5px,5px);
         text-shadow: 1px 1px 2px $sombra;
-        @include popup(-5,5 ,1s )
+        @include popup(-5px,5px,1s )
     }
 }
 
@@ -74,5 +73,9 @@ label{
 input,select{
     @extend label;
     width: 300px;
+}
+
+.carousel-item {
+    height: 80vh;
 }
 

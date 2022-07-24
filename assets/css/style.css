@@ -42,9 +42,8 @@ a {
   font-weight: 100;
   color: black; }
   a:hover {
-    transform: translate(-5px, 5px);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    transform: translate(-5, 5);
+    transform: translate(-5px, 5px);
     transition: all 1s ease-in-out; }
 
 label, input, select {
@@ -53,6 +52,9 @@ label, input, select {
 
 input, select {
   width: 300px; }
+
+.carousel-item {
+  height: 80vh; }
 
 header {
   font-family: 'Kdam Thmor Pro', sans-serif;
@@ -91,9 +93,7 @@ header {
   .footer_div:hover {
     transform: translate(-5px, 5px);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
-    transform: translate(-5, 5);
-    transition: all 1s ease-in-out; }
+    transition: all ease-in-out 1s; }
 
 .icon-twitter:hover {
   color: #55acee; }
@@ -103,6 +103,9 @@ header {
 
 .icon-instagram:hover {
   color: #dd2a7b; }
+
+.icon-linkedin:hover {
+  color: #0077b5; }
 
 .card {
   align-items: center;
@@ -144,13 +147,19 @@ header {
     box-shadow: -10px 10px rgba(0, 0, 0, 0.5);
     transform: translate(10px, -10px); }
 
+@media screen and (max-width: 950px) {
+  .carousel-item {
+    height: 70vh; } }
+
 @media screen and (max-width: 835px) {
   h2 {
     font-size: 1.5rem; }
   .titulo, .subtitulo {
     font-size: 2.5rem; }
   .subtitulo {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .carousel-item {
+    height: 50vh; } }
 
 @media screen and (max-width: 768px) {
   .footer {
@@ -180,7 +189,9 @@ header {
 
 @media screen and (max-width: 625px) {
   input, select, label, input, select {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .carousel-item {
+    height: 35vh; } }
 
 @media screen and (max-width: 430px) {
   .titulo, .subtitulo {
@@ -196,4 +207,6 @@ header {
     text-align: center; }
   .card_p {
     font-size: 1rem;
-    padding-bottom: 15px; } }
+    padding-bottom: 15px; }
+  .carousel-item {
+    height: 25vh; } }
