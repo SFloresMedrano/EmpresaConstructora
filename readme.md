@@ -27,3 +27,5 @@ Mejor descripcion de textos alternativos
 Resize de imagenes para su relación en responsive
 
 Añadido logo Linkedin en footer RRSS
+
+Centrado de imagenes en carousel
